@@ -63,6 +63,50 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
+  <member name="M:AdvancedDLSupport.GenericManglerAttribute.CreateManglerInstance">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:AdvancedDLSupport.Generics.GenericMethodSignature.#ctor(AdvancedDLSupport.Reflection.IntrospectiveMethodInfo)">
+    <parameter name="methodInfo">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:AdvancedDLSupport.Generics.GenericMethodSignature.#ctor(System.String,System.Type,System.Collections.Generic.IReadOnlyList{System.Type})">
+    <parameter name="name">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="returnType">
+      <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="parameterTypes">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:AdvancedDLSupport.Generics.GenericMethodSignature.Name">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="M:AdvancedDLSupport.Generics.GenericMethodSignature.op_Equality(AdvancedDLSupport.Generics.GenericMethodSignature,AdvancedDLSupport.Generics.GenericMethodSignature)">
+    <parameter name="left">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="right">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="M:AdvancedDLSupport.Generics.GenericMethodSignature.op_Inequality(AdvancedDLSupport.Generics.GenericMethodSignature,AdvancedDLSupport.Generics.GenericMethodSignature)">
+    <parameter name="left">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+    <parameter name="right">
+      <attribute ctor="M:JetBrains.Annotations.CanBeNullAttribute.#ctor" />
+    </parameter>
+  </member>
+  <member name="P:AdvancedDLSupport.Generics.GenericMethodSignature.ParameterTypes">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
+  <member name="P:AdvancedDLSupport.Generics.GenericMethodSignature.ReturnType">
+    <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
+  </member>
   <member name="T:AdvancedDLSupport.IEntrypointMangler">
     <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
     <attribute ctor="M:JetBrains.Annotations.UsedImplicitlyAttribute.#ctor" />
@@ -578,7 +622,8 @@
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
-  <member name="M:AdvancedDLSupport.Reflection.IntrospectiveMemberBase`1.#ctor(`0,System.Type,System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData})">    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  <member name="M:AdvancedDLSupport.Reflection.IntrospectiveMemberBase`1.#ctor(`0,System.Type,System.Collections.Generic.IEnumerable{System.Reflection.CustomAttributeData})">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
     <parameter name="memberInfo">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
@@ -674,12 +719,21 @@
   <member name="P:AdvancedDLSupport.Reflection.IntrospectiveMethodInfo.Attributes">
     <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
   </member>
+  <member name="P:AdvancedDLSupport.Reflection.IntrospectiveMethodInfo.ContainsGenericParameters">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="P:AdvancedDLSupport.Reflection.IntrospectiveMethodInfo.GenericArguments">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
   <member name="M:AdvancedDLSupport.Reflection.IntrospectiveMethodInfo.HasSameSignatureAs(AdvancedDLSupport.Reflection.IntrospectiveMethodInfo)">
     <parameter name="other">
       <attribute ctor="M:JetBrains.Annotations.NotNullAttribute.#ctor" />
     </parameter>
   </member>
   <member name="P:AdvancedDLSupport.Reflection.IntrospectiveMethodInfo.IsAbstract">
+    <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
+  </member>
+  <member name="P:AdvancedDLSupport.Reflection.IntrospectiveMethodInfo.IsGenericMethod">
     <attribute ctor="M:JetBrains.Annotations.PublicAPIAttribute.#ctor" />
   </member>
   <member name="P:AdvancedDLSupport.Reflection.IntrospectiveMethodInfo.IsSpecialName">

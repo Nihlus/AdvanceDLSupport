@@ -164,7 +164,7 @@ namespace AdvancedDLSupport.Pipeline
             yield return new GenericMethodImplementationGenerator
             (
                 _targetModule,
-                _targetType,
+                TargetType,
                 _constructorIL,
                 _options
             );
